@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		C82D6D5A253ECFCC00498549 /* CustomRoundedWilsonFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C82D6D58253ECFCC00498549 /* CustomRoundedWilsonFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C82D6D62253ED11A00498549 /* CustomRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D6D61253ED11A00498549 /* CustomRoundedView.swift */; };
+		FFF86A6AFDBAC5D814C82BA3 /* Pods_CustomRoundedWilsonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D171BCA116AC01CBEF7C318 /* Pods_CustomRoundedWilsonFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0BBFD31C7ED40AC48BA0B3 /* Pods-CustomRoundedWilsonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomRoundedWilsonFramework.release.xcconfig"; path = "Target Support Files/Pods-CustomRoundedWilsonFramework/Pods-CustomRoundedWilsonFramework.release.xcconfig"; sourceTree = "<group>"; };
+		8D171BCA116AC01CBEF7C318 /* Pods_CustomRoundedWilsonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomRoundedWilsonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82D6D55253ECFCC00498549 /* CustomRoundedWilsonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomRoundedWilsonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82D6D58253ECFCC00498549 /* CustomRoundedWilsonFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomRoundedWilsonFramework.h; sourceTree = "<group>"; };
 		C82D6D59253ECFCC00498549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C82D6D61253ED11A00498549 /* CustomRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedView.swift; sourceTree = "<group>"; };
+		D380C530625D32F10B0F2125 /* Pods-CustomRoundedWilsonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomRoundedWilsonFramework.debug.xcconfig"; path = "Target Support Files/Pods-CustomRoundedWilsonFramework/Pods-CustomRoundedWilsonFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +27,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF86A6AFDBAC5D814C82BA3 /* Pods_CustomRoundedWilsonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0937E2956BE562D8DC19C996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D171BCA116AC01CBEF7C318 /* Pods_CustomRoundedWilsonFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		654BD7D65641079BCAAEAB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D380C530625D32F10B0F2125 /* Pods-CustomRoundedWilsonFramework.debug.xcconfig */,
+				7D0BBFD31C7ED40AC48BA0B3 /* Pods-CustomRoundedWilsonFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C82D6D4B253ECFCC00498549 = {
 			isa = PBXGroup;
 			children = (
 				C82D6D57253ECFCC00498549 /* CustomRoundedWilsonFramework */,
 				C82D6D56253ECFCC00498549 /* Products */,
+				654BD7D65641079BCAAEAB75 /* Pods */,
+				0937E2956BE562D8DC19C996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C82D6D5D253ECFCC00498549 /* Build configuration list for PBXNativeTarget "CustomRoundedWilsonFramework" */;
 			buildPhases = (
+				CA5C63DD84B856E5E748CF14 /* [CP] Check Pods Manifest.lock */,
 				C82D6D50253ECFCC00498549 /* Headers */,
 				C82D6D51253ECFCC00498549 /* Sources */,
 				C82D6D52253ECFCC00498549 /* Frameworks */,
@@ -128,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA5C63DD84B856E5E748CF14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomRoundedWilsonFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C82D6D51253ECFCC00498549 /* Sources */ = {
@@ -265,6 +316,7 @@
 		};
 		C82D6D5E253ECFCC00498549 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D380C530625D32F10B0F2125 /* Pods-CustomRoundedWilsonFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +344,7 @@
 		};
 		C82D6D5F253ECFCC00498549 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0BBFD31C7ED40AC48BA0B3 /* Pods-CustomRoundedWilsonFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
