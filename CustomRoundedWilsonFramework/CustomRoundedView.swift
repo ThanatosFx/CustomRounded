@@ -15,7 +15,7 @@ public class CustomRoundedView{
         view.layer.cornerRadius = 5.0
         view.layer.masksToBounds = true
     }
-    // 
+    //
     public static func roundedTopRightTopLeft(view: UIView){
         view.clipsToBounds = true
         view.layer.cornerRadius = 10
